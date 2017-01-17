@@ -160,6 +160,8 @@ export class Angular2TokenService implements CanActivate {
             this._currentUserType = this._getUserTypeByName(registerData.userType);
 
         let body = JSON.stringify({
+            initials:               registerData.initials,
+            username:               registerData.username,
             email:                  registerData.email,
             name:                   registerData.name,
             password:               registerData.password,
