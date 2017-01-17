@@ -7,6 +7,8 @@ export interface SignInData {
 }
 
 export interface RegisterData {
+    username?:              string;
+    initials?:              string;
     email:                  string;
     password:               string;
     passwordConfirmation:   string;
