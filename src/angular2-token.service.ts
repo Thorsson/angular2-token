@@ -139,6 +139,7 @@ export class Angular2TokenService implements CanActivate {
             }
         };
 
+
         this._options = (<any>Object).assign(defaultOptions, options);
 
         this._tryLoadAuthData();
