@@ -36,6 +36,8 @@ export interface UserData {
     uid: string;
     name: string;
     nickname: string;
+    username: string;
+    initials: string;
     image: any;
     email: string;
 }
