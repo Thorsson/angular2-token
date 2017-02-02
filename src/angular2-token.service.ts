@@ -12,6 +12,7 @@ import {
 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/share';
+import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/interval';
 import 'rxjs/add/observable/fromEvent';
 import 'rxjs/add/operator/pluck';
