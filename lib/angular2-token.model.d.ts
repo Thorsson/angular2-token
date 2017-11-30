@@ -12,10 +12,13 @@ export interface RegisterData {
     name?: string;
     userType?: string;
 }
+export interface RegisterData {
+    [key: string]: string;
+}
 export interface UpdatePasswordData {
     password: string;
     passwordConfirmation: string;
-    passwordCurrent: string;
+    passwordCurrent?: string;
     userType?: string;
     resetPasswordToken?: string;
 }
