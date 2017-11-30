@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, AbstractControl } from '@angular/forms';
 
-import { BaseField } from '../../../';
+import { BaseField } from '../../../a2t-ui.forms';
 
 @Component({
     selector:   'a2t-form-field',
@@ -87,7 +87,7 @@ export class A2tFormFieldComponent implements OnInit {
     @Input() question:  BaseField;
     @Input() form:      FormGroup;
 
-    private _control:   AbstractControl;
+    _control:   AbstractControl;
 
     ngOnInit() {
         this._control = this.form.controls[this.question.key];

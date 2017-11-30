@@ -1,7 +1,7 @@
 import { Http, BaseRequestOptions, Response, ResponseOptions, Headers, RequestMethod } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 import { inject, TestBed } from '@angular/core/testing';
-import { ActivatedRoute, RouterOutletMap, RouterState, Router } from '@angular/router';
+import { ActivatedRoute, RouterState, Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { Angular2TokenService } from './angular2-token.service';
@@ -158,7 +158,7 @@ describe('Angular2TokenService', () => {
 		);
 
 		tokenService.init({ apiPath: 'myapi', registerAccountPath: 'myauth/myregister' });
-		tokenService.registerAccount('example@example.org', 'password', 'password');
+		tokenService.registerAccount(registerData);
 	}));
 
 	it('deleteAccount should send to configured path', inject([Angular2TokenService, MockBackend], (tokenService, mockBackend) => {

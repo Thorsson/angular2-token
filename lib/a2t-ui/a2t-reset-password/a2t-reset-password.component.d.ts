@@ -3,7 +3,7 @@ import { A2tFormService } from '../a2t-shared';
 export declare class A2tResetPasswordComponent {
     private _formService;
     private _sessionService;
-    private _emailSend;
+    _emailSend: boolean;
     constructor(_formService: A2tFormService, _sessionService: Angular2TokenService);
     private _handleSuccess();
     private _handleError();
